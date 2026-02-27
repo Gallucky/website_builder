@@ -123,7 +123,7 @@ aside {
                 text-indent: 5px;
 
                 &:hover {
-                    cursor: url("../../../images/cursor-click_24x24.png"), pointer;
+                    cursor: url("../images/cursor-click_24x24.png"), pointer;
                 }
             }
         }
@@ -399,7 +399,7 @@ aside {
     }
 
     button:hover {
-        cursor: url("../../../images/cursor-click_24x24.png"), pointer;
+        cursor: url("../images/cursor-click_24x24.png"), pointer;
         transform: scale(0.9);
     }
 }
