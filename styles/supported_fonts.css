@@ -1,0 +1,64 @@
+/* Importing Google Fonts */
+
+/* Merriweather Font */
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+/* Playfair Display Font */
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+/* Bebas Neue Font */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+/* Roboto Font */
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+/* Lato Font */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+/* Montserrat Font */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+/* Bebas Neue Font */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+/* Poppins Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Dancing Script Font */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+
+/* Pacifico Font */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&display=swap");
+
+/* Source Code Pro Font */
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+
+/* David Libre Font */
+@import url("https://fonts.googleapis.com/css2?family=David+Libre:wght@400;500;700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+
+/* Frank Ruhl Libre Font */
+@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap");
+
+/* Assistant Font */
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+/* Arimo Font */
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Frank+Ruhl+Libre:wght@300..900&display=swap");
+
+/* Rubik Font */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+/* Secular One Font */
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Frank+Ruhl+Libre:wght@300..900&family=Secular+One&display=swap");
+
+/* Amatic SC Font */
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+
+/* Heebo Font */
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Heebo:wght@100..900&display=swap");
+
+/* Varela Round Font */
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
+/* IBM Plex Mono Font */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");

@@ -1,0 +1,32 @@
+.size-element {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "width-title height-title"
+        "width height";
+    column-gap: 10px;
+}
+
+.width-title {
+    grid-area: width-title;
+}
+
+.height-title {
+    grid-area: height-title;
+}
+
+.tool-size-width-input {
+    grid-area: width;
+}
+
+.tool-size-height-input {
+    grid-area: height;
+}
+
+/* Mobile Support */
+@media (max-width: 768px) {
+    .outer-wrapper {
+        width: 90% !important;
+    }
+}

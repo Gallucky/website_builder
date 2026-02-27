@@ -1,0 +1,24 @@
+/*
+Every element that has a
+child with the class info-btn.
+In other words the parent / ancestor of
+element with the class info-btn.
+*/
+*:has(.info-btn) {
+    position: relative;
+}
+
+.info-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+
+    border: none;
+    outline: none;
+    background-image: url("../images/information-symbol.png"), none;
+    background-position: center center;
+}
+
+.info-btn::after {
+    content: var(--pseudo-after-text);
+}

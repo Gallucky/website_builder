@@ -1,0 +1,35 @@
+.select-element {
+    outline: none;
+    border: 3px groove black;
+    border-radius: 8px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#type-selection[default-value="true"] {
+    color: gray;
+
+    option:not(:nth-child(1)) {
+        color: black;
+    }
+}
+
+#type-selection[default-value="false"] {
+    color: black;
+}
+
+#font-family-selection[default-value="true"] {
+    color: gray;
+
+    option:not(:nth-child(1)) {
+        color: black;
+    }
+}
+
+#font-family-selection[default-value="false"] {
+    color: black;
+}
+
+select option.selected {
+    background-color: rgb(91, 171, 171);
+    background-clip: text;
+}

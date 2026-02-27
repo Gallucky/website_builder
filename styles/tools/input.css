@@ -1,0 +1,25 @@
+.color-input {
+    width: 100%;
+    margin-top: 5px;
+}
+
+/*
+All of the label elements under an HTMLElement
+representing a tool of type input.
+*/
+.tool.tool-type-input label {
+    width: 100%;
+    height: 100%;
+}
+
+.text-area-element {
+    width: 100%;
+    resize: none;
+}
+
+/* Mobile Support */
+@media (max-width: 768px) {
+    .tool.tool-type-input label {
+        width: 90%;
+    }
+}

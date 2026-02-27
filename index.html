@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Website Builder</title>
+
+        <link rel="stylesheet" href="../../../styles/globals/general.css" />
+        <link rel="stylesheet" href="./styles/website_builder.css" />
+        <link rel="stylesheet" href="./styles/tools/specific_styling.css" />
+        <link rel="stylesheet" href="./styles/supported_fonts.css" id="supported-fonts-link" />
+
+        <script type="module" src="./scripts/index.js" defer></script>
+    </head>
+    <body>
+        <div class="overlay"></div>
+        <div class="website-builder">
+            <header>
+                <h1>Website Builder</h1>
+            </header>
+            <aside>
+                <h2 class="tools-title">Element Creator Tools:</h2>
+                <div class="tools-panel"></div>
+                <footer id="action-buttons">
+                    <button id="create-element-btn">Create</button>
+                    <button id="save-workspace-btn">Save</button>
+                </footer>
+            </aside>
+            <main id="workspace"></main>
+            <footer id="builder-footer">
+                <span>האתר נכתב על ידי גל בן אבו</span>
+            </footer>
+        </div>
+        <button id="floating-btn">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="32px"
+                viewBox="0 -960 960 960"
+                width="32px"
+                fill="#000000">
+                <path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z" />
+            </svg>
+        </button>
+    </body>
+</html>

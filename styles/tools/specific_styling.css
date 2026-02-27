@@ -1,0 +1,91 @@
+#tool-element-type {
+    gap: 5px;
+
+    select {
+        border-radius: 4px;
+        font-size: 0.9em;
+        font-family: Rubik;
+
+        outline: none;
+    }
+}
+
+#tool-element-name {
+    label {
+        height: fit-content;
+        line-height: normal;
+    }
+    input {
+        font-size: 0.9em;
+        line-height: normal;
+    }
+}
+
+#tool-element-text {
+    textarea {
+        font-size: 0.9em;
+    }
+}
+
+#tool-element-size {
+    display: flex;
+
+    #element-size-label {
+        text-decoration: underline;
+    }
+
+    .outer-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        width: 100%;
+        gap: 10px;
+
+        label {
+            font-weight: 500;
+            font-size: 0.8em;
+        }
+
+        input {
+            width: 70%;
+            border-radius: 4px;
+            font-size: 0.8em;
+            font-family: Rubik;
+
+            margin-right: 5px;
+        }
+
+        .width-area .unit,
+        .height-area .unit {
+            font-size: 0.8em;
+            font-family: Rubik;
+            font-weight: 500;
+            line-height: 150%;
+        }
+
+        .separator {
+            font-family: Rubik;
+            font-size: 1.1em;
+            font-weight: 500;
+
+            align-self: center;
+            margin-top: 5px;
+
+            margin-inline: 0 20px;
+            line-height: 100%;
+        }
+    }
+}
+
+#tool-element-bg-color {
+}
+
+#tool-element-font-color {
+}
+
+#tool-element-font-size {
+}
+
+#tool-element-font-family {
+}

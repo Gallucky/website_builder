@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: block !important;
+}
+
+button {
+    user-select: none;
+}
+
+input,
+textarea {
+    text-indent: 3px !important;
+}
+
+.website-builder {
+    width: 95vw;
+    height: 90vh;
+
+    margin: auto;
+    margin-block: 5vh;
+    padding-inline: 1vw;
+
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    grid-template-rows: auto 85% auto;
+    grid-template-areas: "header header" "tool-panel workspace" "builder-footer builder-footer";
+
+    background-color: #7c919a;
+    border: 1px solid black;
+    box-shadow: 0px 0px 30px 0.01px black;
+
+    border-radius: 16px;
+    border: 1px solid black;
+}
+
+header {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    text-align: center;
+    grid-area: header;
+
+    padding: 0.5em;
+
+    h1 {
+        width: fit-content;
+        height: fit-content;
+
+        align-self: center;
+        justify-self: center;
+
+        text-decoration: underline;
+
+        font-family: Rubik;
+    }
+}
+
+aside {
+    grid-area: tool-panel;
+    background-color: blue;
+
+    padding-block-start: 1vh;
+    padding-inline-start: 1vw;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "title"
+        "tools"
+        "action-buttons";
+
+    gap: 1vh;
+
+    h2 {
+        width: fit-content;
+        height: fit-content;
+
+        grid-area: title;
+
+        font-size: 20px;
+        text-decoration: underline;
+    }
+
+    .tools-panel {
+        width: 95%;
+        height: 100%;
+
+        padding-block: 2.5%;
+        border: 1px solid black;
+
+        overflow-y: scroll;
+        grid-area: tools;
+
+        /* Moving everything along with the scrollbar to the left side. */
+        direction: rtl;
+
+        /* Resetting the direction to all child elements. */
+        * {
+            direction: ltr;
+        }
+
+        /* 
+            Styling the main Y Scrollbar
+            Helping website:
+            https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp
+        */
+        &::-webkit-scrollbar {
+            width: 10px;
+            background-color: #303030;
+            border-radius: 10px;
+
+            margin-right: 10px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #adadad;
+            border-radius: 10px;
+            height: 50px;
+        }
+        &::-webkit-scrollbar-thumb:hover {
+            background: radial-gradient(lightgray, darkgray, gray);
+            border-radius: 10px;
+            height: 50px;
+        }
+        &::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 7.5px white;
+            border-radius: 10px;
+        }
+        &::-webkit-resizer {
+            border-radius: 10px;
+        }
+    }
+
+    #action-buttons {
+        width: 90%;
+        height: fit-content;
+
+        grid-area: action-buttons;
+        margin-bottom: 10%;
+
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        gap: 10%;
+
+        button {
+            width: 45%;
+
+            outline: none;
+            border: 3px groove black;
+            border-radius: 8px;
+            background-color: teal;
+
+            font-weight: 500;
+            font-size: 1em;
+            font-family: Rubik;
+
+            transition: transform 0.3s ease-in-out;
+        }
+
+        button:hover {
+            color: white;
+            transform: scale(0.95);
+            cursor: url("../../../images/cursor-click_24x24.png"), pointer;
+        }
+    }
+}
+
+/* main */
+#workspace {
+    grid-area: workspace;
+    position: relative;
+    border: 3px groove black;
+}
+
+/* footer */
+#builder-footer {
+    width: 100%;
+    height: fit-content;
+
+    grid-area: builder-footer;
+    align-self: center;
+
+    text-align: center;
+    font-family: Rubik;
+
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+
+#floating-btn {
+    width: 50px;
+    height: 50px;
+
+    display: none;
+    position: absolute;
+    bottom: 2.5%;
+    right: 5%;
+
+    background: teal;
+    border-radius: 50%;
+    border: 1px solid black;
+
+    z-index: 100;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    z-index: -1;
+}
+
+/* Mobile Support */
+@media (max-width: 768px) {
+    .website-builder {
+        width: 95%;
+        height: 90vh;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        font-size: 0.75rem;
+    }
+
+    aside {
+        width: 80%;
+        height: 70%;
+
+        transform: translate(-100%);
+        transition: transform 1s ease-in-out;
+
+        z-index: 10;
+
+        margin-top: 10%;
+        margin-bottom: 5%;
+
+        padding: 5%;
+
+        position: absolute;
+        top: auto;
+        left: 0;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas:
+            "title"
+            "tools"
+            "action-buttons";
+
+        border: 3px groove black;
+        border-top-right-radius: 16px;
+        border-bottom-right-radius: 16px;
+
+        h2 {
+            width: 100%;
+            /* font-size: 0.6rem; */
+            grid-area: title;
+        }
+
+        .tools-panel {
+            width: 100%;
+            height: 90%;
+
+            border: 1px solid black;
+
+            overflow-y: scroll;
+            grid-area: tools;
+        }
+
+        #action-buttons {
+            width: 95%;
+            flex-direction: column;
+            margin: auto;
+            gap: 1vh;
+            text-align: center;
+
+            grid-area: action-buttons;
+
+            button {
+                width: 90%;
+
+                margin: auto;
+                line-height: 150%;
+            }
+        }
+    }
+
+    aside.open {
+        transform: translate(0);
+    }
+
+    #workspace {
+        width: 95%;
+        height: 95%;
+    }
+
+    #floating-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.draggable-link {
+    user-select: none;
+    display: block;
+    pointer-events: none;
+
+    span {
+        width: fit-content;
+        height: fit-content;
+
+        pointer-events: auto;
+        z-index: 1;
+        cursor: url("../../../images/cursor-click_24x24.png"), pointer;
+    }
+}
+
+#test {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+}
+
+*[data-draggable] {
+    line-break: anywhere;
+}
